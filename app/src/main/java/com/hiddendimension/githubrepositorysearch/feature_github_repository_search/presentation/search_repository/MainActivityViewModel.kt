@@ -11,10 +11,10 @@ import javax.inject.Inject
 
 
 @HiltViewModel
-class MainActivityViewModel @Inject constructor(private val repository: RetroRepository)
-    : ViewModel(){
+class MainActivityViewModel @Inject constructor(private val repository: RetroRepository) :
+    ViewModel() {
 
-    var searchQuery: String?=""
+    var searchQuery: String? = ""
 
     fun getAllRepositoryList(): LiveData<List<RepositoryData>> {
         return repository.getAllRecords()
@@ -24,8 +24,8 @@ class MainActivityViewModel @Inject constructor(private val repository: RetroRep
         repository.makeApiCall("ny")
     }
 
-    fun searchOnClick(view : View){
-
-        repository.makeApiCall(searchQuery)
-    }
+    fun searchOnClick(view: View) {
+        if (SearchUtil.validateSearch(searchQuery.toString()))
+            repository.makeApiCall(searchQuery)
+       }
 }

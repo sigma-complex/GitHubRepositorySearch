@@ -1,4 +1,4 @@
-package com.demo.paging3withroom.network
+package com.hiddendimension.githubrepositorysearch.feature_github_repository_search.data.repository
 
 import com.hiddendimension.githubrepositorysearch.feature_github_repository_search.domain.model.RepositoriesList
 import retrofit2.Call

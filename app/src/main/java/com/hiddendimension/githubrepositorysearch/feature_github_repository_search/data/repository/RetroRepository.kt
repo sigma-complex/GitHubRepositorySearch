@@ -2,7 +2,6 @@ package com.hiddendimension.githubrepositorysearch.feature_github_repository_sea
 
 import androidx.lifecycle.LiveData
 import com.hiddendimension.githubrepositorysearch.feature_github_repository_search.data.data_source.AppDao
-import com.demo.paging3withroom.network.RetroServiceInterface
 import com.hiddendimension.githubrepositorysearch.feature_github_repository_search.domain.model.RepositoriesList
 import com.hiddendimension.githubrepositorysearch.feature_github_repository_search.domain.model.RepositoryData
 

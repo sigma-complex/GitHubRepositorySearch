@@ -3,7 +3,7 @@ package com.hiddendimension.githubrepositorysearch.di
 import android.app.Application
 import com.hiddendimension.githubrepositorysearch.feature_github_repository_search.data.data_source.AppDao
 import com.hiddendimension.githubrepositorysearch.feature_github_repository_search.data.data_source.AppDatabase
-import com.demo.paging3withroom.network.RetroServiceInterface
+import com.hiddendimension.githubrepositorysearch.feature_github_repository_search.data.repository.RetroServiceInterface
 
 
 import dagger.Module
